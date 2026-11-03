@@ -1,0 +1,13 @@
+# Raw data never goes in git — it lives in the Databricks Volume
+*.csv
+*.csv.gz
+data/
+
+# Python / editor noise
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.venv/
+.vscode/
+.databricks/
+.env
