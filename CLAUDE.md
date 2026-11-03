@@ -18,6 +18,9 @@ Azure AI Foundry feature.
   old_new, duration, paon, saon, street, locality, town_city, district, county,
   ppd_category, record_status
 - record_status: A = add, C = change, D = delete (monthly update files).
+- The monthly update file always has the same name (pp-monthly-update-new-version.csv).
+  Land each one with a dated name (e.g. pp-monthly-2026-10.csv): bronze replaces rows
+  by source_file, and silver must apply monthly files in date order.
 - Start with one year (~1m rows); Databricks Free Edition compute is small.
 
 ## Platform
