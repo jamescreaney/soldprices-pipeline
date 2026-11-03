@@ -1,7 +1,22 @@
-# Raw data never goes in git — it lives in the Databricks Volume
+# Raw data never goes in git: it lives in the Databricks Volume
 *.csv
 *.csv.gz
+*.zip
 data/
+
+# Credentials and secrets: must never be committed
+.databrickscfg
+.databricks/
+.env
+.env.*
+*.env
+*token*
+*secret*
+*credential*
+*.pem
+*.key
+*.pfx
+local.settings.json
 
 # Python / editor noise
 __pycache__/
@@ -9,5 +24,3 @@ __pycache__/
 .ipynb_checkpoints/
 .venv/
 .vscode/
-.databricks/
-.env

@@ -44,3 +44,10 @@ Azure AI Foundry feature.
 - Notebooks/code in /notebooks, SQL in /sql, docs in /docs.
 - Each notebook starts with a markdown cell explaining what it does and why.
 - Commit small, with clear messages.
+
+## Public repo rules
+- This repo is PUBLIC. Never commit credentials: Databricks tokens, .databrickscfg,
+  .env files, Azure keys or connection strings. Use Databricks secrets / env vars.
+- Keep anything specific to the live soldprices.uk site out of this repo entirely:
+  no database connection details, server names, resource names or file paths.
+  This project only uses public Land Registry data and its own Databricks/Azure resources.
